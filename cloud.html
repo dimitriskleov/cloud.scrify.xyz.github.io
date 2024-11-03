@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure body and html take full height */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            height: 100vh; /* Set the height to full viewport height */
+        }
+        .iframe-container iframe {
+            position: absolute; 
+            top: -50px; /* Move the iframe up by 50px */
+            left: -50px; /* Move the iframe left by 50px */
+            width: calc(100% + 100px); /* Increase width by 100px to compensate for left and right cuts */
+            height: calc(100vh + 100px); /* Increase height by 100px to compensate for top and bottom cuts */
+            border: none;
+        }
+    </style>
+    <script>
+        // Disable right-click on the entire document
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="https://websim.ai/c/xwobDfXp0IJ68qVmP"></iframe>
+    </div>
+</body>
+</html>
